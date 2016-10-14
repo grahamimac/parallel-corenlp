@@ -1,6 +1,6 @@
 # Run CoreNLP in Parallel with Spark
 
-A relatively quick, easy, and effective way to spin up a Spark cluster with the [Stanford CoreNLP Server 3.6.0](http://stanfordnlp.github.io/CoreNLP/download.html) installed and running on the master and all nodes.
+A relatively quick, easy, and effective way to spin up a Spark cluster with the [Stanford CoreNLP Server 3.6.0](http://stanfordnlp.github.io/CoreNLP/download.html) installed and running on all nodes.
 
 ### Setup
 
