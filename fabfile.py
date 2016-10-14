@@ -16,31 +16,12 @@ env.user = "root"
 # List of AWS private key Files
 env.key_filename = ["/path/to/keypair.pem"]
 
-"""
-@parallel
-def install_updates():
-	sudo('yum update -y')
-	sudo('yum install -y docker')
-	sudo('usermod -aG docker root')
-	sudo('curl -O https://jdbc.postgresql.org/download/postgresql-9.4.1211.jre6.jar')
-	sudo('reboot')
-"""
-
-# fab set_hosts:us-east-1,all install_updates
-# Wait a couple minutes for reboot, ssh into an instance
 # fab set_hosts:us-east-1,False run_docker_CoreNLP
-# fab set_hosts:us-east-1,all psycopg2
 @parallel
 def run_docker_CoreNLP():
 	run('service docker stop')
 	run('service docker start')
 	run('docker start corenlp_test')
-
-# install psycopg2
-@parallel
-def psycopg2():
-	sudo('yum install -y postgresql-libs python-psycopg2')
-	sudo('cp -r /usr/lib64/python2.6/dist-packages/psycopg2 /usr/lib64/python2.7/dist-packages/psycopg2')
 
 # Fabric task to set env.hosts based on tag key-value pair
 def set_hosts(region=REGION,master=MASTER):
