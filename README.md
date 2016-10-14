@@ -2,6 +2,8 @@
 
 A relatively quick, easy, and effective way to spin up a Spark cluster with the [Stanford CoreNLP Server 3.6.0](http://stanfordnlp.github.io/CoreNLP/download.html) installed and running on all nodes. This allows data analysts to parallelize computationally intensive Natural Language Processing tasks such as sentiment analysis using Stanford's state-of-the-art CoreNLP server.
 
+Note: This assumes some familiarity with Amazon AWS, Spark, and the command line.
+
 ### Setup
 
 Before we begin, we'll need to install Spark, the Spark EC2 package, and Fabric, and make a small edit.
