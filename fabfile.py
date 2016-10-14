@@ -14,7 +14,7 @@ MASTER = "False"
 env.user = "root"
 
 # List of AWS private key Files
-env.key_filename = ["/Users/graham3333/Documents/Twitter/spark-2.0.0-bin-hadoop2.7/ec2/tilekey_new.pem"]
+env.key_filename = ["/path/to/keypair.pem"]
 
 """
 @parallel
