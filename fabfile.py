@@ -45,7 +45,7 @@ def _get_public_dns(region,master):
 						print "Instance", instance.public_dns_name
 						public_dns.append(str(instance.public_dns_name))
 				elif master == "all":
-					if instance.tags["Name"] != "Testing Twitter":
+					if instance.tags["Name"] not in notin_names:
 						print "Instance", instance.public_dns_name
 						public_dns.append(str(instance.public_dns_name))										
 	return public_dns
