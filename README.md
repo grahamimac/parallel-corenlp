@@ -41,6 +41,7 @@ Before we begin, we'll need to install Spark, the Spark EC2 package, Fabric, and
 4. Install Fabric, which will parallelize starting the docker service when the cluster starts up. Install Fabric according to the [instructions here](http://www.fabfile.org/installing.html). Copy the fabfile.py file from this repo to your ec2 directory, which looks like:
 
 	```bash
+	cd spark-2.0.1-bin-hadoop2.7/ec2/
 	git clone https://github.com/grahamimac/parallel-corenlp.git
 	```
 
