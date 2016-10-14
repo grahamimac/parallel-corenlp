@@ -6,7 +6,7 @@ A relatively quick, easy, and effective way to spin up a Spark cluster with the 
 
 Before we begin, we'll need to install Spark, the Spark EC2 package, Fabric, and make a small edit.
 
-1. Install Spark. Go to the [Spark download page](http://spark.apache.org/downloads.html), select the most recent version, and download the file, either manually or using the relevant `wget` or `curl` command for your system. Then unzip the file using tar. The procedure may look something like:
+1. Install Spark. Go to the [Spark download page](http://spark.apache.org/downloads.html), select the most recent version, and download the file, either manually or using the relevant `wget` or `curl` command for your system. Then unzip the file manually or via command-line using `tar`. The procedure may look something like:
 	
 	```bash
 	curl -o http://d3kbcqa49mib13.cloudfront.net/spark-2.0.1-bin-hadoop2.7.tgz
